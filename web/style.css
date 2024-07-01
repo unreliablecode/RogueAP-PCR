@@ -1,0 +1,127 @@
+
+.middle .box-type{
+	min-width:100%;
+	float:left;
+	margin:0px 12px 12px 0px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	-khtml-border-radius:3px;
+	box-shadow:1px 1px 1px #c6c6c6;
+	-moz-box-shadow:1px 1px 1px #c6c6c6;
+	-webkit-box-shadow:1px 1px 1px #c6c6c6;
+	-ms-box-shadow:1px 1px 1px #c6c6c6;
+	-o-box-shadow:1px 1px 1px #c6c6c6;
+	-khtml-box-shadow:1px 1px 1px #c6c6c6;
+}
+
+.middle .box-type .images, .box-little-pop .images{
+	float:left;
+	width:30%;
+	height:100px;
+	text-align:center;
+
+	color:#FFF;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-ms-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	-khtml-border-radius: 3px 0px 0px 3px;
+	-o-border-radius: 3px 0px 0px 3px;
+	overflow:hidden;
+}
+.middle .box-type .images img	, .box-little-pop .images img{
+	margin:6px 0px 0px 0px;
+}
+.middle .box-type .desc{
+	float:left;
+	width:70%;
+	height:100px;
+	padding:0px 15px 15px 15px;
+}
+.middle .box-type .desc h3{
+	font-size:20px;
+}
+.middle .box-type .desc p{
+	color:#666666;
+	font-size: 12px;
+}
+
+.yellow .images  {background:#f39c12; }
+.yellow h3 ,.yellow h2  {color:#f39c12}
+.orange .images  {background:#d35400; }
+.orange h3,.orange h2  {color:#d35400}
+.red .images  {background:#c0392b; }
+.red h3 ,.red h2  {color:#c0392b}
+.green .images  {background:#27ae60; }
+.green h3  ,.green h2  {color:#27ae60}
+.blue .images  {background:#2d8bca; }
+.blue h3 ,.blue h2 {color:#2d8bca}
+.violet .images{background:#8e44ad; }
+.violet h3,.violet h2 {color:#8e44ad}
+
+.middle .box-type .images:hover img {
+    -moz-animation: animation2 .6s linear;
+    -webkit-animation: animation2 .6s linear;
+}
+
+
+
+@keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
+
+
+
+@-moz-keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
+
+
+@-webkit-keyframes animation2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    100% {
+        margin-top: 0;
+    };
+}
