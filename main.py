@@ -3,12 +3,23 @@ import socket
 import os
 import mdns
 
+# Connect to the AP
+sta = network.WLAN(network.STA_IF)
+sta.active(True)
+sta.connect('unreliablecode.net', '@DiahSayang<3')
+
+# Wait for the connection to be established
+while not sta.isconnected():
+    pass
+
+print('Connected to AP with IP:', sta.ifconfig()[0])
+
 # Set up the access point
 ap = network.WLAN(network.AP_IF)
 ap.active(True)
-ap.config(essid='PCR_Hotspot', authmode=network.AUTH_OPEN)
+ap.config(essid='PCR', authmode=network.AUTH_OPEN)
 
-print('Network configuration:', ap.ifconfig())
+print('Access Point configuration:', ap.ifconfig())
 
 # Set up mDNS
 hostname = "hotspot.pcr.ac.id"
