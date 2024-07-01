@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'Museo';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Museo'), url(../fonts/Museo300-Regular.woff) format('woff');
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+*{margin: 0;padding: 0;}
+
+html {
+	
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	padding-top: 60px;
+	margin-bottom: 60px;
+	font-family:'Museo';
+	background: url('../img/back_top.png') repeat-x top -2px center #fff ;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background: url('../img/back-bottom.png') repeat-x top center #fff ;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.title-head{
+	background-color: #0181D5;
+	font-size: 14px;
+	color: white;
+	padding:5px;
+}
+
+.container {
+	width: auto;
+	max-width: 1024px;
+	padding: 0 15px;
+	
+}
+.container .text-muted {
+	margin: 20px 0;
+	float: right;
+}
+.section-title {
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f9ca3a;
+    font-size: 24px;
+    text-align: center;
+}
+.divider {
+    border-top: 1px solid #eee;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 0px rgb(255, 255, 255) inset;
+    overflow: visible;
+}
+.divider > span {
+    width: 46px;
+    background: url('../img/divider-center.png') no-repeat scroll center center #fff;
+    height: 8px;
+    display: block;
+    margin: -4px auto 0px;
+}
+.divider > title {
+    width: 180px;
+    background: #fff;
+    height: 20px;
+    display: block;
+    margin: -20px auto 0px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #000;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.has-success .form-control:focus {
+    border-color: #f9ca3a;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #006EB7;
+}
+.btn-success {
+	font-size: 16px;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    color: #FFF;
+    background-color: #006EB7;
+    border-color: #fff;
+}
+.row {
+	margin-bottom:10px;
+}
+
+.title {
+	width:50px;
+	height:50px;
+	margin: 10px;
+}
+	
+.no	{ 
+	font-size:40px;
+	color: white;
+	text-align: center;
+	background-color: #0099FF;
+	border-radius: 100em;
+	border: 0px; box-shadow: 0px 0px 0px 5px #f9ca3a;
+	padding:5px;
+	}
+.isi {
+}
+
+/* */
